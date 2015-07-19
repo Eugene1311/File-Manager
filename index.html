@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+<!--	<script src="script.js"></script>-->
+	<!--<script src="FileManager.js"></script>
+	<script>
+	  FileManager.init();
+	</script>-->
+
+    <script src="constructor.js"></script>
+    <script>
+	    var fileManager = new FileManager({
+				id: "dropbox"
+			});
+			var anotherFileManager = new FileManager({
+				 id: "files"
+			});
+	    window.onload = function() { 
+				fileManager.init();
+				anotherFileManager.init(); 
+	    }
+    </script>
+
+	<title>File Manager</title>
+</head>
+<body>
+</body>
+</html>
